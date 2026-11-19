@@ -13,19 +13,7 @@ A small Retrieval-Augmented Generation (RAG) pipeline built in Jupyter notebooks
 
 ## Flow
 
-```mermaid
-flowchart LR
-    A[PDFs in data/] --> B[PyPDFLoader]
-    B --> C[Text splitter<br/>1000 chars, 200 overlap]
-    C --> D[Embeddings<br/>all-MiniLM-L6-v2]
-    D --> E[(ChromaDB<br/>data/vector_store)]
-    Q[User question] --> F[RAGRetriever<br/>top-k similarity search]
-    E --> F
-    F --> G[Retrieved context]
-    G --> H[Groq LLM<br/>openai/gpt-oss-120b]
-    Q --> H
-    H --> I[Answer]
-```
+![RAG pipeline flowchart](docs/flow.png)
 
 ## Layout
 
