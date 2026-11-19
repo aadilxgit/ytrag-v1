@@ -1,0 +1,75 @@
+Python Programming Introduction
+==============================
+
+Python is a general-purpose programming language designed to be readable.
+People use it to automate tasks, build websites, analyze data, and create
+machine-learning applications. A Python program is a set of instructions that
+the Python interpreter runs from top to bottom.
+
+Values and variables
+--------------------
+A variable is a name that refers to a value. Python does not require you to
+declare a variable's type in advance.
+
+name = "Ada"
+age = 12
+is_learning = True
+
+Common built-in types include str for text, int for whole numbers, float for
+decimal numbers, and bool for True or False values. Use print(value) to display
+a value. Use type(value) to inspect its type.
+
+Making decisions and repeating work
+------------------------------------
+An if statement chooses what to do based on a condition. An else branch handles
+the other case. Indentation marks which statements belong to each block.
+
+temperature = 18
+if temperature < 20:
+    print("Bring a jacket")
+else:
+    print("A light shirt is fine")
+
+A for loop repeats an action for each item in a sequence:
+
+for language in ["Python", "JavaScript", "Rust"]:
+    print(language)
+
+Functions
+---------
+A function gives a reusable name to a group of instructions. Parameters provide
+its inputs, and return sends a result back to the caller.
+
+def greet(person):
+    return f"Hello, {person}!"
+
+message = greet("Ada")
+print(message)
+
+Collections
+-----------
+A list stores items in order and can be changed. A dictionary stores values
+under named keys.
+
+colors = ["blue", "green", "red"]
+student = {"name": "Ada", "grade": 7}
+print(colors[0])
+print(student["name"])
+
+Errors and modules
+------------------
+When something goes wrong, Python reports an exception. Read the error message
+to find the problem's type and the line where it occurred. A try/except block
+can handle an expected error without stopping the whole program.
+
+Modules are reusable Python files. Import one to use its functions; for example,
+import math lets you call math.sqrt(25). Python also includes a standard library
+of modules for common tasks such as working with dates, files, and JSON.
+
+Good first habits
+-----------------
+Use descriptive variable and function names, keep indentation consistent, and
+test a small piece of code before adding more. Start by changing the examples:
+try a different name, add another color, or write a function that adds two
+numbers. Programming becomes easier when you run code, observe the result, and
+make one change at a time.

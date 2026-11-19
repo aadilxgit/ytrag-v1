@@ -1,0 +1,53 @@
+Introduction to Machine Learning
+================================
+
+Machine learning (ML) is a way to build computer programs that learn patterns
+from examples. Instead of writing every rule by hand, a developer gives an
+algorithm data and a goal. The trained model can then make predictions about
+new data. Machine learning is one area of artificial intelligence.
+
+Data, features, and labels
+-------------------------
+A dataset is a collection of examples. Each example has features: the
+information used to make a prediction. In a house-price dataset, features
+might include the number of bedrooms and the house's location. A label is the
+answer the model should learn to predict, such as the house's sale price.
+
+Common types of machine learning
+--------------------------------
+In supervised learning, examples include the correct answers. A model can
+learn to sort emails into spam and not-spam, or predict a price.
+
+In unsupervised learning, examples have no supplied answers. A model looks for
+groups or patterns, such as customers with similar shopping habits.
+
+In reinforcement learning, a system takes actions and receives rewards or
+penalties. It learns which actions work well over time.
+
+The basic workflow
+------------------
+First, collect relevant data and check that it is accurate. Next, split the
+data into training examples and test examples. The model learns from the
+training data. The test data checks how well it handles examples it has not
+seen before. After evaluation, the model can be used to make predictions.
+
+Training and prediction
+-----------------------
+Training is the process of finding patterns in example data. Prediction, also
+called inference, is using the trained model on new data.
+
+In Python, a machine-learning library often provides a model with fit and
+predict methods. fit learns from training examples; predict produces answers
+for new examples. The exact code depends on the library and the problem.
+
+Avoiding common mistakes
+------------------------
+A model can memorize its training examples instead of learning a useful
+general pattern. This is called overfitting. Testing on separate data helps
+reveal it. Also check for missing values, incorrect labels, and data that does
+not represent the real problem. A more complicated model is not always better.
+
+Machine learning is useful when examples contain patterns that are difficult
+to express as simple rules. It still depends on people to choose the goal,
+prepare trustworthy data, check results, and decide whether predictions are
+appropriate to use.
